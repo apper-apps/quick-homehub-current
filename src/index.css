@@ -1,0 +1,47 @@
+@import 'react-toastify/dist/ReactToastify.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Toast styling */
+.Toastify__toast-container {
+  @apply text-sm;
+}
+
+.Toastify__toast {
+  @apply bg-white border border-gray-200 shadow-lg rounded-lg text-gray-900;
+  min-height: auto;
+}
+
+.Toastify__toast--success {
+  @apply bg-emerald-50 border-emerald-200 text-emerald-900;
+}
+
+.Toastify__toast--error {
+  @apply bg-red-50 border-red-200 text-red-900;
+}
+
+.Toastify__toast--info {
+  @apply bg-blue-50 border-blue-200 text-blue-900;
+}
+
+.Toastify__progress-bar {
+  @apply bg-primary-500;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-400;
+}
